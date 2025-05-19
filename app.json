@@ -4,26 +4,43 @@
     "slug": "FitFinder",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon.png", 
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/images/splash-icon.png", 
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
+    
+    "android": { 
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/adaptive-icon.png", 
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      
+      "package": "com.tanvirislam.fitfinder", 
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBRmrCwpILT6ZVCs7_5HVv4ToxvK9vIA3U" 
+        }
+      },
+      "permissions": [ 
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+        
+      ]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "web": { 
+      "favicon": "./assets/favicon.png" 
+    },
+    "plugins": [ 
+      "expo-font"
+      
+    ],
+    "assetBundlePatterns": [ 
+      "**/*"
+    ]
+   
   }
 }
